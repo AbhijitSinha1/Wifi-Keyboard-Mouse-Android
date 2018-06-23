@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:id="@+id/touch_screen"
+    tools:context="com.abhijitsinha.smartinput.wifikeyboardandmouse.FullscreenActivity">
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/keyboard_toggle"
+            android:layout_toLeftOf="@+id/settings_button"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/keyboard"
+            android:drawableLeft="@drawable/keyboard"
+            android:text="@string/keyboard"/>
+
+        <Button
+            android:id="@+id/settings_button"
+            android:layout_alignParentEnd="true"
+            android:text="Settings"
+            android:drawableStart="@drawable/settings"
+            android:drawableLeft="@drawable/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
